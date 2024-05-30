@@ -1,5 +1,6 @@
 import CommonHedaer from './components/common/header/CommonHedaer'
 import CommonSearchBar from './components/common/searchBar/CommonSearchBar'
+import CommonNav from './components/common/navigation/CommonNav'
 import styles from './styles/index.module.scss'
 
 function index() {
@@ -8,6 +9,7 @@ function index() {
             {/* 공통 헤더 UI 부분 */}
             <CommonHedaer />
             {/* 공통 네비게이션 UI 부분 */}
+            <CommonNav />
             <div className={styles.page__contents}>
                 <div className={styles.page__contents__introBox}>
                     <div className={styles.wrapper}>
