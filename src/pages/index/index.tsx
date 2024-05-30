@@ -1,6 +1,10 @@
-import CommonHedaer from './components/common/header/CommonHedaer'
-import CommonSearchBar from './components/common/searchBar/CommonSearchBar'
-import CommonNav from './components/common/navigation/CommonNav'
+import CommonHedaer from '@/components/common/header/CommonHedaer'
+import CommonSearchBar from '@/components/common/searchBar/CommonSearchBar'
+import CommonNav from '@/components/common/navigation/CommonNav'
+import CommonFooter from '@/components/common/footer/CommonFooter'
+import Card from './components/Card'
+
+// CSS
 import styles from './styles/index.module.scss'
 
 function index() {
@@ -22,9 +26,15 @@ function index() {
                         <CommonSearchBar />
                     </div>
                 </div>
-                <div className={styles.page__contents__imageBox}></div>
+                <div className={styles.page__contents__imageBox}>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
             </div>
             {/* 공통 푸터 UI 부분 */}
+            <CommonFooter />
         </div>
     )
 }
